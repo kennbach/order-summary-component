@@ -57,19 +57,22 @@ textarea {
 
 /* Project Styles */
 body {
-  background-color: var(--color-pale-blue);
-  color: var(--color-desaturated-blue);
+  background: url(/images/pattern-background-mobile.svg) var(--color-pale-blue);
+  background-repeat: no-repeat;
+  background-size: 100% 33vw;
   font-family: "Red Hat Display", sans-serif;
-  font-size: 1.6rem;
   font-weight: var(--font-weight-light);
-  margin: 5vw;
+  font-size: 1.6rem;
+  color: var(--color-desaturated-blue);
 }
+
 main {
   display: grid;
   justify-items: center;
   align-items: start;
   max-width: 100%;
   min-height: 100vh;
+  margin: 5vw;
 }
 
 .card {
@@ -186,9 +189,13 @@ main {
 
 @media screen and (min-width: 768px) {
   body {
-    margin: 0;
+    background: url(/images/pattern-background-desktop.svg)
+      var(--color-pale-blue);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
   }
   main {
+    margin: 0;
     align-items: center;
   }
   .card {
